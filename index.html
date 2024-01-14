@@ -39,15 +39,14 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h3 class="home__title">Hi,<br>I'am <span class="home__title-color">Ezekiel</span><br> A Web Designer/Developer</h3>
-
+                    <h4 class="home__title">Hi,<br>I'am <span class="home__title-color">Ezekiel</span><br> A Web Designer/Developer</h4>
                     <a href="#" class="button">Contact</a>
                 </div>
 
                 <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://linkedin.com/ezekielbarnabas" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="http://github.com/ezekielhb" class="home__social-icon"><i class='bx bxl-github' ></i></a>
                 </div>
 
                 <div class="home__img">
@@ -158,25 +157,34 @@
                 <h2 class="section-title">Work</h2>
 
                 <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div>
+    <a href="#" class="work__img" onclick="showDescription('Work 1 description')">
+        <img src="assets/img/work1.jpg" alt="">
+    </a>
+    <a href="#" class="work__img" onclick="showDescription('Work 2 description')">
+        <img src="assets/img/work2.jpg" alt="">
+    </a>
+    <a href="#" class="work__img" onclick="showDescription('Work 3 description')">
+        <img src="assets/img/work3.jpg" alt="">
+    </a>
+    <a href="#" class="work__img" onclick="showDescription('Work 4 description')">
+        <img src="assets/img/work4.jpg" alt="">
+    </a>
+    <a href="#" class="work__img" onclick="showDescription('Work 5 description')">
+        <img src="assets/img/work5.jpg" alt="">
+    </a>
+    <a href="#" class="work__img" onclick="showDescription('Work 6 description')">
+        <img src="assets/img/work6.jpg" alt="">
+    </a>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p id="description"></p>
+    </div>
+</div>
+
             </section>
 
             <!--===== CONTACT =====-->
